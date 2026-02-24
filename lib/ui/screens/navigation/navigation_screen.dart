@@ -1,10 +1,11 @@
 
 import 'package:evenlyproject/ui/screens/navigation/tabs/favourites/favourites_tab.dart';
 import 'package:evenlyproject/ui/screens/navigation/tabs/home/home_tab.dart';
-import 'package:evenlyproject/ui/screens/navigation/tabs/settings/settings_tab.dart';
+import 'package:evenlyproject/ui/screens/navigation/tabs/profile/profile_tab.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/app_colors.dart';
+import '../../utils/app_routes.dart';
 
 
 class NavigationScreen extends StatefulWidget {
@@ -16,12 +17,11 @@ class NavigationScreen extends StatefulWidget {
 
 class _NavigationScreenState extends State<NavigationScreen> {
   var selectedIndex = 0;
-  var tabs = [const HomeTab(), const FavoritesTab(), const SettingsTab()];
+  var tabs = [const HomeTab(), const FavoriteTab(), const ProfileTab()];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: AppColors.offWhite,
         body: tabs[selectedIndex],
         floatingActionButton: buildFAB(),
         bottomNavigationBar: buildBottomNavigation(),
@@ -31,6 +31,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
 
   buildFAB() => FloatingActionButton(
     onPressed: () {
+      Navigator.push(context, AppRoutes.addEvent);
     },
     backgroundColor: AppColors.blue,
     shape: const CircleBorder(),

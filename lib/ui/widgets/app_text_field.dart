@@ -5,7 +5,7 @@ import '../utils/app_colors.dart';
 class AppTextField extends StatelessWidget {
   final Widget? prefixIcon;
   final Widget? suffixIcon;
-  final String hint;
+  final String? hint;
   final bool isPassword;
   final int minLines;
   final TextEditingController? controller;
@@ -16,7 +16,7 @@ class AppTextField extends StatelessWidget {
     this.controller,
     this.prefixIcon,
     this.suffixIcon,
-    required this.hint,
+     this.hint,
     this.isPassword = false,
     this.minLines = 1,
     this.validator

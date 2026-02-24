@@ -19,6 +19,13 @@ abstract class AppAssets {
   static const String icPersonSvg = "assets/images/ic_person.svg";
   static const String icBirthdaySvg = "assets/images/ic_bitrhday.svg";
   static const String icCalendarSvg = "assets/images/ic_calendar.svg";
-  static const String appLogo = "assets/images/app_logo.svg";
+  static const String appLogo = "assets/images/app_logoo.png";
+  static const String routeLogo = "assets/images/route_logo.png";
+  static const String personalize = "assets/images/personalize.png";
+  static const String findEvent = "assets/images/find_event.png";
+  static const String effortless = "assets/images/effortless.png";
+  static const String connect = "assets/images/connect.png";
+
   static const String icEyeClosedSvg = "assets/images/ic_eye_closed.svg";
+
 }
